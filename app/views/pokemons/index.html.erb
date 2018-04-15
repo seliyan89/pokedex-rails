@@ -1,0 +1,21 @@
+<h1>List of all Pokemons</h1>
+
+<table>
+	<tr>
+		<th>num</th>
+		<th>name</th>
+		<th>height</th>
+		<th>weight</th>
+	</tr>
+
+	<% @pokemons.each do |pokemon| %>
+		<tr>
+			<td><%=pokemon.num%></td>
+			<td><%=pokemon.name%></td>
+			<td><%=pokemon.height%></td>
+			<td><%=pokemon.weight%></td>
+		</tr>
+
+	<% end %>
+
+</table>

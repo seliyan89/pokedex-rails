@@ -1,0 +1,30 @@
+<h3>HI</h3>
+
+
+<%= form_with scope: :pokemon, url: pokemons_path, local: true do |form| %>
+  <p>
+    <%= form.label :num %><br>
+    <%= form.text_field :num %>
+  </p>
+ 
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= form.label :height %><br>
+    <%= form.text_field :height %>
+  </p>
+ 
+   <p>
+    <%= form.label :weight %><br>
+    <%= form.text_field :weight %>
+  </p>
+ 
+
+  <p>
+    <%= form.submit "Create your own Pokemon" %>
+  </p>
+<% end %>
+
